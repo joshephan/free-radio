@@ -44,6 +44,16 @@ export function Header() {
             >
               Favorites
             </Link>
+            <Link
+              href="/about"
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                pathname === "/about"
+                  ? "bg-zinc-800 text-white"
+                  : "text-zinc-400 hover:text-white hover:bg-zinc-800/50"
+              }`}
+            >
+              About
+            </Link>
           </nav>
         </div>
       </div>
